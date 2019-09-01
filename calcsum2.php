@@ -9,7 +9,7 @@ function calcSum($str1, $str2) {
 		//$str1 = '1234567890';
 		//$str2 = "9876543210";
 		$str1Length = strlen($str1);
-        $str2Length = strlen($str2);
+        	$str2Length = strlen($str2);
 		$string1 = '';
 		$string2 = '';
 		$length = max($str1Length, $str2Length);
@@ -25,7 +25,7 @@ function calcSum($str1, $str2) {
 			//echo 'строка2='."$string2";
 		}
 			$result[] = ($string1 + $string2 + $buff) % 10;
-            $buff = floor(($string1 + $string2 + $buff) / 10);
+            		$buff = floor(($string1 + $string2 + $buff) / 10);
 	}
 	$revstr = implode("",  array_reverse($result));
 	return $revstr;
